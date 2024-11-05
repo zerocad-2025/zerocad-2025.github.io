@@ -89,6 +89,31 @@ body {
   /*color: #4286f4;*/
 }
 
+video.header-vid {
+  height: 140px;
+  border: 1px solid black;
+  border-radius: 10px ;
+  -moz-border-radius: 10px ;
+  -webkit-border-radius: 10px ;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.video-item {
+  text-align: center;
+}
+video {
+  width: 250px;
+  height: auto;
+}
+figcaption {
+  margin-top: 8px;
+}
+
 .publication-video {
     position: relative;
     width: 100%;
@@ -111,31 +136,7 @@ body {
 }
 
 .results-carousel {
-  display: flex;
   overflow: hidden;
-}
-
-.carousel-inner {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.video-row {
-  display: flex;
-  justify-content: space-between; /* Adjust as needed */
-  flex-wrap: wrap; /* Allow items to wrap in case of fewer videos */
-}
-
-.item {
-  flex: 1 1 calc(33.333% - 10px); /* 3 columns with spacing */
-  margin: 5px; /* Spacing between items */
-  max-width: calc(33.333% - 10px); /* Limit the max width */
-}
-
-.video-row video {
-  width: 100%; /* Make video fill the item */
-  height: auto; /* Maintain aspect ratio */
 }
 
 .results-carousel .item {
