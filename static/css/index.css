@@ -111,22 +111,34 @@ body {
 }
 
 .results-carousel {
-  overflow: hidden;
   display: flex;
-  flex-wrap: wrap; /* Allows items to wrap to a new row if needed */
-  gap: 10px; /* Space between video items */
-  justify-content: center; /* Centers items within the carousel */
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.video-row {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  flex-wrap: wrap; /* Allow items to wrap in case of fewer videos */
+}
+
+.item {
+  flex: 1 1 calc(33.333% - 10px); /* 3 columns with spacing */
+  margin: 5px; /* Spacing between items */
+  max-width: calc(33.333% - 10px); /* Limit the max width */
+}
+
+.video-row video {
+  width: 100%; /* Make video fill the item */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .results-carousel .item {
-  /* margin: 5px;
-  overflow: hidden;
-  border: 1px solid #bbb;
-  border-radius: 10px;
-  padding: 0;
-  font-size: 0; */
-  flex: 1 1 30%; /* Adjusts the width of each item to about 30% */
-  max-width: 30%; /* Ensures items don't get too wide */
   margin: 5px;
   overflow: hidden;
   border: 1px solid #bbb;
@@ -136,9 +148,6 @@ body {
 }
 
 .results-carousel video {
-  /* margin: 0; */
-  width: 100%; /* Ensures each video fills its container */
-  height: auto; /* Maintains video aspect ratio */
   margin: 0;
 }
 
