@@ -1,16 +1,17 @@
-# Nerfies
+# ZeroCAD
 
-This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
+This is the repository that contains source code for the [ZeroCAD website](https://zerocad-2025.github.io/).
 
-If you find Nerfies useful for your work please cite:
+If you find ZeroCAD useful for your work please cite:
 ```
-@article{park2021nerfies
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-  title     = {Nerfies: Deformable Neural Radiance Fields},
-  journal   = {ICCV},
-  year      = {2021},
+@article{xxx
+  author    = {xxx},
+  title     = {ZeroCAD: Leveraging 2D Outpainting as Guidance for Zero-Shot 3D Instance-based Scene Reconstruction},
+  journal   = {xxx},
+  year      = {xxx},
 }
 ```
 
-# Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+# Acknowledgement
+
+The code for this webpage is based on [this source code](https://github.com/nerfies/nerfies.github.io)
