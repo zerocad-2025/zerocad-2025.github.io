@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZeroCAD: Leveraging 2D Outpainting as Guidance for Zero-Shot 3D Instance-based Scene Reconstruction</title>
+  <title>TTCAD: Guided 3D Instance-Level Scene Completion via 2D Outpainting at Test-Time</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -48,7 +48,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ZeroCAD: Leveraging 2D Outpainting as Guidance for Zero-Shot 3D Instance-based Scene Reconstruction</h1>
+          <h1 class="title is-1 publication-title">TTCAD: Guided 3D Instance-Level Scene Completion via 2D Outpainting at Test-Time</h1>
           <!-- <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
@@ -139,9 +139,9 @@
         </tr>
       </table>
       <h2 class="subtitle has-text-centered">
-        We propose <span class="dnerf">ZeroCAD</span>, an instance-level scene completion method based on the foundation of scan-to-CAD.
+        We propose <span class="dnerf">TTCAD</span>, an instance-level scene completion method based on the foundation of scan-to-CAD.
         Our methodology advocates for learning 2D outpainting, due to the availability of 2D annotated data, followed by 3D test time optimization to enhance alignment, retrieval, and deformation.
-        By only supervising the 2D outpainting we enable zero-shot instance reconstruction.
+        By only supervising the 2D outpainting we enable strong cross-category generalization.
       </h2>
     </div>
   </div>
@@ -160,12 +160,12 @@
             Scan-to-CAD addresses this issue by leveraging CAD databases to infer the general shapes of objects.
             Despite recent advancements, existing approaches face two key limitations.
             First, they rely heavily on 3D-labeled data for training, which is costly and time-consuming to acquire, leading to lower reconstruction performance.
-            Second, current methods use implicit shape encodings that often result in non-watertight meshes and require extensive 3D supervision, making zero-shot generalization particularly difficult.
+            Second, current methods use implicit shape encodings that often result in non-watertight meshes and require extensive 3D supervision, making class-agnostic generalization particularly difficult.
             To overcome these challenges, we introduce a novel approach that combines 2D outpainting with 3D test-time optimization.
             By training only our proposed 2D outpainting network and using it to guide 3D retrieval, registration, and deformation at test-time, we achieve class-agnostic, high-quality CAD object estimation.
             Our method enhances this process through a 2D-3D mapping strategy that strengthens 2D guidance during test-time.
             Additionally, we propose a non-rigid transformation pipeline that addresses mesh quality issues by leveraging biharmonic coordinates for mesh deformation.
-            Culminating our contributions, we propose a zero-shot instance-based scene completion method based on Scan-to-CAD.
+		    Culminating our contributions, we propose a test-time, instance-level scene completion method based on Scan-to-CAD that demonstrates strong cross-category generalization.
             We demonstrate up to a 16% improvement in Point Coverage Ratio for Semantic Scene Completion and a 28%  reduction in Chamfer Distance for Scan-to-CAD.
           </p>
         </div>
@@ -772,7 +772,7 @@
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{xxx,
   author    = {xxx},
-  title     = {ZeroCAD: Leveraging 2D Outpainting as Guidance for Zero-Shot 3D Instance-based Scene Reconstruction},
+  title     = {TTCAD: Guided 3D Instance-Level Scene Completion via 2D Outpainting at Test-Time},
   journal   = {xxx},
   year      = {xxx},
 }</code></pre>
